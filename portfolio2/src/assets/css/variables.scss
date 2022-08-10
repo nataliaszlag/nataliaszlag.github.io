@@ -1,0 +1,30 @@
+/*fonts    */
+$font-primary: Helvetica, sans-serif;
+$font-secondary: Helvetica, sans-serif;
+$font-h1: 200px;
+$font-h2: 102px;
+$font-h3: 48px;
+$font-h4: 32px;
+$font-normal: 64px;
+$font-body-big: 21px;
+$font-body: 16px;
+
+/*colors    */
+$color-light-grey: #F5F5F5;
+$color-dark-grey: #73808D;
+$color-black: #303030;
+$color-white:#FFFFFF;
+$color-purple: #CDB4DB;
+$color-light-purple: #EFEBF1;;
+$color-dark-purple: #7B6C83;;
+
+/*breakpoints    */
+$bp-mobile: 767px;
+$bp-S:1280px;
+$bp-M: 1440px;
+$bp-L: 1920px;
+
+@media only screen and (max-width: $bp-mobile) {
+    $font-h1: 64px;
+    $font-h3: 21px;
+}

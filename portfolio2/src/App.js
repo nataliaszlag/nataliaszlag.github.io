@@ -1,15 +1,14 @@
-import logo from './logo.svg';
 import Hero from './components/Hero'
-import Nav from './components/Nav'
+import Navigation from './components/Navigation'
 import About from './components/About'
 import Cards from './components/Cards'
 import Contact from './components/Contact'
-import './App.css';
+import './assets/stylesheets.css';
 
 function App() {
   return (
     <div className="App">     
-          <Nav/>
+          <Navigation/>
           <Hero/>
           <About/>
           <Cards/>
