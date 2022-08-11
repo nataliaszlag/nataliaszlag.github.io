@@ -1,10 +1,10 @@
 /*fonts    */
-$font-primary: Helvetica, sans-serif;
-$font-secondary: Helvetica, sans-serif;
-$font-h1: 200px;
-$font-h2: 102px;
-$font-h3: 48px;
-$font-h4: 32px;
+$font-primary: 'Josefin Sans', sans-serif;
+$font-secondary: 'poppins', sans-serif;
+$font-h1: clamp(64px, 7vw, 200px);
+$font-h2: clamp(48px, 7vw, 102px);
+$font-h3: clamp(32px, 5vw, 48px);
+$font-h4: clamp(21px, 5vw, 32px);
 $font-normal: 64px;
 $font-body-big: 21px;
 $font-body: 16px;
@@ -24,7 +24,4 @@ $bp-S:1280px;
 $bp-M: 1440px;
 $bp-L: 1920px;
 
-@media only screen and (max-width: $bp-mobile) {
-    $font-h1: 64px;
-    $font-h3: 21px;
-}
+

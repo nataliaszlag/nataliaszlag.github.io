@@ -1,0 +1,19 @@
+#About {
+   .aboutMe {
+    margin-bottom: 16px;
+   }
+
+    .aboutGrey {
+        color: $color-dark-grey;
+        font-size: $font-body;
+
+        h3 {
+            color: $color-dark-grey;
+        }
+
+        div {
+            margin-bottom: 40px;
+        }
+    }
+
+}

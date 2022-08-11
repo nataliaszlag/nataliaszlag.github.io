@@ -1,11 +1,6 @@
 #hero {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: url("./imgs/hero.webp");
- 
-    /* Set a specific height */
-    height: calc(100vh - 60px);
-  
-    /* Position and center the image to scale nicely on all screens */
+    height: calc(100vh - 56px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,7 +18,7 @@
    top: 70%;
    left: 50%;
    transform: translate(-50%, -50%);
-   color: white;
+   color: $color-white;
  
    font-family: 'Josefin Sans';
    font-style: normal;
@@ -37,14 +32,14 @@
    position: absolute;
    top: 90%;
    left: 5%;
-   color: white;
+   color: $color-white;
  }
  
  h1:before {
    content: "";
    width: 40px;
    flex: 1 1;
-   border-top: 3px solid  #CDB4DB;
+   border-top: 3px solid  $color-purple;
    margin: auto;
    display: block;
    transform: translateY(-5px);
@@ -56,6 +51,6 @@
    display: inline-block;
    color: transparent;
    -webkit-text-stroke-width: 3px;
-   -webkit-text-stroke-color: #CDB4DB;
+   -webkit-text-stroke-color: $color-purple;
  
  }

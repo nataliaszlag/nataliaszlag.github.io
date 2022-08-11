@@ -1,16 +1,51 @@
 /*fonts    */
 /*colors    */
 /*breakpoints    */
-.app {
+body {
   background: rgba(205, 180, 219, 0.15);
+  font-size: 16px;
+  font-family: "poppins", sans-serif;
+  color: #303030;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-size: clamp(64px, 7vw, 200px);
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h2 {
+  color: #303030;
+  font-size: clamp(48px, 7vw, 102px);
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 32px;
+  line-height: 56px;
+}
+
+h3 {
+  color: #303030;
+  font-size: clamp(32px, 5vw, 48px);
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 40px;
+}
+
+h4 {
+  color: #73808D;
+  font-size: clamp(21px, 5vw, 32px);
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 32px;
+  line-height: 28px;
+}
+
+.container {
+  width: 95%;
 }
 
 #hero {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: url("./imgs/hero.webp");
-  /* Set a specific height */
-  height: calc(100vh - 60px);
-  /* Position and center the image to scale nicely on all screens */
+  height: calc(100vh - 56px);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,7 +53,7 @@
 }
 
 #title {
-  font-size: 200px;
+  font-size: clamp(64px, 7vw, 200px);
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -27,7 +62,7 @@
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: #FFFFFF;
   font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 700;
@@ -40,7 +75,7 @@
   position: absolute;
   top: 90%;
   left: 5%;
-  color: white;
+  color: #FFFFFF;
 }
 
 h1:before {
@@ -60,6 +95,20 @@ h1::after {
   color: transparent;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: #CDB4DB;
+}
+
+#About .aboutMe {
+  margin-bottom: 16px;
+}
+#About .aboutGrey {
+  color: #73808D;
+  font-size: 16px;
+}
+#About .aboutGrey h3 {
+  color: #73808D;
+}
+#About .aboutGrey div {
+  margin-bottom: 40px;
 }
 
 /*# sourceMappingURL=stylesheets.css.map */
