@@ -1,18 +1,29 @@
-import Hero from './components/Hero'
-import Navigation from './components/Navigation'
-import About from './components/About'
-import Cards from './components/Cards'
-import Contact from './components/Contact'
+import Main from './Main.js'
+import Navigation from './components/Navigation.js'
+import AccountingWebsite from './pages/AccountingWebsite.js'
+import MyDelivery from './pages/myDelivery.js'
+import WeddingWebsite from './pages/weddingWebsite.js'
+import GoogleAds from './pages/googleAds.js'
 import './assets/stylesheets.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">     
+    <div className="App">    
+      <Router>
           <Navigation/>
-          <Hero/>
-          <About/>
-          <Cards/>
-          <Contact/>   
+          <Routes>
+            <Route path="/" element={<Main />}/>
+            <Route path="/accounting" element={<AccountingWebsite />}/>
+            <Route path="/delivery" element={<MyDelivery />}/>
+            <Route path="/wedding" element={<WeddingWebsite />}/>
+            <Route path="/ads" element={<GoogleAds />}/>
+          </Routes>
+      </Router> 
     </div>
   );
 }

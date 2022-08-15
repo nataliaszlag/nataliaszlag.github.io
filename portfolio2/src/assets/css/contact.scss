@@ -1,0 +1,84 @@
+#contact {
+
+    .title {
+        color: $color-black;
+        font-size: $font-body-big;
+        font-family: $font-primary;
+        width: 100%;
+        border-bottom: solid 1px $color-black;
+        margin-bottom: 21px;
+    }
+
+    .contact-icons {
+        div {
+            margin-bottom: 20px;
+            img {
+                margin-right: 20px
+            }
+            font-family: $font-secondary;
+        }
+
+    }
+
+    .links {
+        background-image: url("./imgs/contact.webp");
+        height: calc(40vh - 56px);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 32px;
+        padding-right: 18px;
+        margin-bottom: 24px;
+        
+        .btn-primary {
+            color: $color-dark-grey;
+            background-color: $color-white;
+            border-color: $color-purple;
+            border-radius: 0;
+            height: 68px;
+            width: 64px;
+            transform: translateY(-20px);
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 21px;
+            }
+
+            img:first-child {
+                width: 27px;
+            }
+
+
+        }
+    }
+
+    .natalia {
+        font-size: 3em;
+        font-weight: 600;
+        stroke: $color-dark-grey;
+        font-size: $font-natalia;
+        stroke-width: 3px;
+        margin-bottom: 20px;
+        animation: contactAnimate 9s infinite alternate;
+
+        * {
+            font-family: $font-primary;
+        }
+      }
+
+      @keyframes contactAnimate {
+        0% {
+          stroke-dasharray: 0 50%;
+          stroke-dashoffset: 20%;
+        }
+        100% {
+          stroke-dasharray: 50% 0;
+          stroke-dashoffset: -20%;
+        }
+      }
+
+}

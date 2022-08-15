@@ -6,7 +6,7 @@ const About = () => {
       <h2>
         Life begins
       </h2>
-      <h4>
+      <h4 className='atEnd'>
         at the end of comfort zone!
       </h4>
       <div className='aboutMe'>
@@ -32,6 +32,7 @@ const About = () => {
             Enotourism <br/>
             My Cavallier<br/>
             Fashion<br/>
+            Formula 1<br/>
           </div>
         </div>
       </div>
