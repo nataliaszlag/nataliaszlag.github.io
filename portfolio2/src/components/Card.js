@@ -1,9 +1,8 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
-import background from '../assets/imgs/dashboard.webp'
 import arrowRight from '../assets/imgs/arrow-right.svg'
-import Button from 'react-bootstrap/Button';
 import freeImg from '../assets/imgs/freeAcc.png'
+import { Link } from "react-router-dom";
 
 const AboutCard = (props) => {
 const {title, title2, imageUrl, text, linkText, linkUrl} = props;
@@ -21,7 +20,7 @@ const {title, title2, imageUrl, text, linkText, linkUrl} = props;
             <Card.Text>
             {props.text}
             </Card.Text>
-            <a className="card-button" href={linkUrl}>{props.linkText} <img src={arrowRight}/></a>
+            <Link className="card-button" to={linkUrl}>{props.linkText} <img src={arrowRight}/></Link>
           </div>
           <div className='hidden-img'>
             <img src={freeImg}/>
