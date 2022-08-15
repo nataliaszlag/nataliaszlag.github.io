@@ -16,20 +16,20 @@ import {
 function App() {
   return (
     <div className="App">    
-      <HashRouter>
+      <Router>
           <Navigation/>
           <Routes basename="https://nataliaszlag.github.io/" >
-            <Route exact path="/" element={<Main />}/>
-            <Route path="/free" element={<Test />}/>
-            <Route path="/#cards" element={<Main />}/>
-            <Route path="/#About" element={<Main />}/>
-            <Route path="/#contact" element={<Main />}/>
-            <Route path="/accounting" element={<AccountingWebsite />}/>
-            <Route path="/delivery" element={<MyDelivery />}/>
-            <Route path="/wedding" element={<WeddingWebsite />}/>
-            <Route path="/ads" element={<GoogleAds />}/>
+            <Route exact path="" element={<Main />}/>
+            <Route exact path="free" element={<Test />}/>
+            <Route exact path="#cards" element={<Main />}/>
+            <Route exact path="#About" element={<Main />}/>
+            <Route exact path="#contact" element={<Main />}/>
+            <Route exact path="accounting" element={<AccountingWebsite />}/>
+            <Route exact path="delivery" element={<MyDelivery />}/>
+            <Route exact path="wedding" element={<WeddingWebsite />}/>
+            <Route exact path="ads" element={<GoogleAds />}/>
           </Routes>
-      </HashRouter> 
+      </Router> 
     </div>
   );
 }
