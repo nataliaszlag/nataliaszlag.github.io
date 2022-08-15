@@ -2,11 +2,13 @@
 $font-primary: 'Josefin Sans', sans-serif;
 $font-secondary: 'poppins', sans-serif;
 $font-h1: clamp(64px, 7vw, 200px);
-$font-h2: clamp(48px, 7vw, 102px);
+$font-h2: clamp(48px, 6vw, 102px);
 $font-h3: clamp(32px, 5vw, 48px);
 $font-h4: clamp(21px, 5vw, 32px);
+$font-huge: 200px;
 $font-normal: 64px;
 $font-natalia: 64px;
+$font-medium: 48px;
 $font-body-big: 21px;
 $font-body: 16px;
 
@@ -20,7 +22,7 @@ $color-light-purple: #EFEBF1;;
 $color-dark-purple: #7B6C83;;
 
 /*breakpoints    */
-$bp-mobile: 767px;
+$bp-mobile: 768px;
 $bp-S:1280px;
 $bp-M: 1440px;
 $bp-L: 1920px;

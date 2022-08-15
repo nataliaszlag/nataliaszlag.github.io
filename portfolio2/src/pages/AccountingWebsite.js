@@ -4,7 +4,7 @@ import video1 from '../assets/imgs/accounting/video.gif'
 
 const AccountingWebsite = () => {
   return (
-    <div>
+    <div className='container accounting-contener'>
         <img  src={img1}/>
         <img  src={video1}/>
     </div>

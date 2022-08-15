@@ -31,8 +31,8 @@ import accountingImg from '../assets/imgs/accounting.webp'
         "title2" : "Delivery",
         "imageUrl" : [freeImg], 
         "text" : "Free delivery program for popular ecommerce platform in Poland, from B2B and B2C perspectives.", 
-        "linkText" : "coming soon", 
-        "linkUrl" : "#"
+        "linkText" : "VIEW DETAILS", 
+        "linkUrl" : "/free"
     },
     {
       "id" : 4,
@@ -56,6 +56,7 @@ import accountingImg from '../assets/imgs/accounting.webp'
 
 const Cards = () => {
 
+  
   const listedCards = cardList.map((e) => <AboutCard key={e.id} title={e.title} title2={e.title2} imageUrl={e.imageUrl} text={e.text} linkText={e.linkText} linkUrl={e.linkUrl}/>)
   return (
 

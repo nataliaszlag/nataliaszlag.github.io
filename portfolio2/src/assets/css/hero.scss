@@ -6,19 +6,22 @@
     background-size: cover;
     position: relative;
     margin-top: 56px;
+    width: 100%;
  
  }
+
+ .hero-flex {
+  display: flex;
+  justify-content: center;
+  padding-top: 50vh;
+ }
  
- #title {
+ .hero-title {
     font-size: $font-h1;
    display: flex;
    flex-direction: row;
    align-items: flex-end;
    text-align: left;
-   position: absolute;
-   top: 70%;
-   left: 50%;
-   transform: translate(-50%, -50%);
    color: $color-white;
  
    font-family: 'Josefin Sans';
@@ -42,14 +45,17 @@
    align-items: stretch;
    justify-content: space-between;
    align-content: space-around;
-  
-   img {
+
+   .resume-icon {
+    color: $color-white;
     margin-left: 8px;
     margin-right: 8px;
+    margin-top: auto;
+    margin-bottom: auto;
    }
  }
  
- h1:before {
+ .title-left:before {
    content: "";
    width: 40px;
    flex: 1 1;
@@ -59,7 +65,7 @@
    transform: translateY(-18px);
  }
  
- h1::after {
+ .title-right::after {
    width: 40px;
    content: ".";
    display: inline-block;
@@ -71,10 +77,104 @@
 
  #resume::after {
   content: "";
-  width: 100%;
+  width: 50%;
   flex: 1 1;
   border-top: 1px solid  $color-purple;
   margin: auto;
   display: inline-block;
+  transition-duration: 1s;
+}
 
+#resume:hover {
+  &:after {
+    transform: translateX(-50%);
+  }
+}
+
+.title-right {
+  color: $color-purple;
+}
+
+//mediaqueries
+@media screen and (min-width: $bp-mobile) { 
+
+  #hero {
+    background: $color-light-grey;
+    padding: 0;
+
+    .hero-flex {
+      padding-top: 0vh;
+    }
+
+    .hero-flex-item {
+      width: 100%;
+      height: calc(100vh - 56px);
+      display: flex;
+    }
+
+    .flex-left {
+      align-content: center;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .flex-right {
+      background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, rgba(48, 48, 48, 0.15) 52.6%, rgba(48, 48, 48, 0.8) 100%), url("./imgs/hero.webp")  ;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      align-content: center;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .hero-flex {
+      .title-left {
+        color: $color-black;
+        text-align: right;
+      }
+
+      .title-right {
+        color: $color-purple;
+      }
+    }  
+  }
+
+   .hero-title {
+    font-size:$font-huge;
+    line-height: 210px;
+    position: initial;
+    display: block;
+    transform: none;
+   }
+
+   .title-left {
+    display: flex;
+   flex-direction: row;
+   align-items: flex-end;
+   }
+
+   .hero-flex {
+    display: flex;
+   }
+
+   #resume {
+    font-size: $font-body-big;
+    color: $color-dark-grey;
+
+    .resume-icon {
+      color: $color-dark-grey;
+     }
+   }
+
+   .title-left:before {
+    content: "";
+    width: 150px;
+    flex: 1 1;
+    border-top: 6px solid  $color-purple;
+    margin: auto;
+    display: block;
+    transform: translateY(-50px);
+  }
+   
 }

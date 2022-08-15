@@ -1,6 +1,13 @@
 #About {
+    background-color: $color-light-purple;
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        
    .aboutMe {
     margin-bottom: 16px;
+    }
    }
 
     .aboutGrey {
@@ -21,4 +28,38 @@
         margin-bottom: 32px;
     }
 
+}
+
+//mediaqueries
+@media screen and (min-width: $bp-mobile) { 
+    #About {
+        flex-wrap: nowrap;
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        .atEnd {
+            text-align: right;
+            margin-top: 48px;
+            margin-bottom: 60px;
+        }
+
+        .aboutGrey {
+            div:first-child {
+                font-size: $font-body-big;
+                color: $color-black;
+                margin-bottom: 64px;
+            }
+        }
+
+        .about-left {
+            width: 65%;
+            padding-right: 140px;
+            margin-top: 64px;
+        }
+
+        .about-right {
+            width: 35%;
+            
+        }
+    }
 }

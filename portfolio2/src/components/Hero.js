@@ -1,20 +1,21 @@
 import React from 'react'
-import download from '../assets/imgs/download.svg'
 import cv from '../assets/pdf/NataliaSzlag_CV.pdf'
+import { BsDownload } from 'react-icons/bs'
 
 const Hero = () => {
   return (
-    <div id="hero">
-      <h1 id="title">Szlag <br></br>Natalia</h1>
+    <div id="hero" className='container'>
+      <div className='hero-flex'>
+        <div className='hero-flex-item flex-left'>
+          <h1 className="hero-title title-left">Szl<br></br>Na</h1>
+        </div>
+        <div className='hero-flex-item flex-right'>
+        <h1 className="hero-title title-right">ag <br></br>talia</h1>
+        </div>
+      </div>
       <a href={cv} download>
         <div id="resume">Resume 
-          <img
-            src={download}
-            width="21"
-            height="21"
-            className="d-inline-block align-top"
-            alt="React Bootstrap logo"
-          />
+            <BsDownload className='resume-icon'/>
           </div>
           </a>
     </div>

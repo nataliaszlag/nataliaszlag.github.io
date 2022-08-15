@@ -30,9 +30,9 @@ const Navigation = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end' collapseOnSelect>
             <Nav className="justify-content-end">
-              <Nav.Link href="#About">About</Nav.Link>
-              <Nav.Link href="#cards">Case studies</Nav.Link>
-              <Nav.Link href="#contact">Contact</Nav.Link>
+              <Nav.Link href="/#About">About</Nav.Link>
+              <Nav.Link href="/#cards">Case studies</Nav.Link>
+              <Nav.Link href="/#contact">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
       </Container>

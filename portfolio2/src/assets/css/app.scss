@@ -1,5 +1,5 @@
 body {
-    background: rgba(205, 180, 219, 0.15);
+    background: $color-light-grey;
     font-size: $font-body;
     font-family: $font-secondary;
     color: $color-black;
@@ -44,6 +44,7 @@ h4 {
 
 .container {
     width: 95%;
+    max-width: 1280px;
 }
 
 #Nav {
@@ -71,4 +72,34 @@ h4 {
         background-image: url("./imgs/menu-icon.svg")
     }
    
+}
+
+.nav-link {
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: $color-dark-purple;
+}
+
+.react-icons {
+    color: $color-purple;
+
+    &:hover {
+        color:$color-dark-purple;
+    }
+}
+
+.accounting-contener {
+    margin-top:56px;
+    img {
+        width: 100%;
+    }
+}
+
+//mediaqueries
+@media screen and (min-width: $bp-mobile) { 
+    .container {
+        width: 75%;
+    }
 }
