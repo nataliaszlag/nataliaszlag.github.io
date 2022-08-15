@@ -7,7 +7,8 @@ import GoogleAds from './pages/googleAds.js'
 import Test from './pages/deliveryFree.js'
 import './assets/stylesheets.css';
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -15,10 +16,10 @@ import {
 function App() {
   return (
     <div className="App">    
-      <Router>
+      <HashRouter>
           <Navigation/>
-          <Routes >
-            <Route path="/" element={<Main />}/>
+          <Routes basename="https://nataliaszlag.github.io/" >
+            <Route exact path="/" element={<Main />}/>
             <Route path="/free" element={<Test />}/>
             <Route path="/#cards" element={<Main />}/>
             <Route path="/#About" element={<Main />}/>
@@ -28,7 +29,7 @@ function App() {
             <Route path="/wedding" element={<WeddingWebsite />}/>
             <Route path="/ads" element={<GoogleAds />}/>
           </Routes>
-      </Router> 
+      </HashRouter> 
     </div>
   );
 }
