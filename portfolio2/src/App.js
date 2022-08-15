@@ -7,7 +7,7 @@ import GoogleAds from './pages/googleAds.js'
 import Test from './pages/deliveryFree.js'
 import './assets/stylesheets.css';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
